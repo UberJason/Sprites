@@ -18,7 +18,6 @@
 		964C89021D13033F009E86A9 /* Sprites WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 964C89011D13033F009E86A9 /* Sprites WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		964C89091D13033F009E86A9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964C89081D13033F009E86A9 /* InterfaceController.swift */; };
 		964C890B1D13033F009E86A9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964C890A1D13033F009E86A9 /* ExtensionDelegate.swift */; };
-		964C890D1D13033F009E86A9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964C890C1D13033F009E86A9 /* NotificationController.swift */; };
 		964C890F1D13033F009E86A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964C890E1D13033F009E86A9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +79,9 @@
 		964C89071D13033F009E86A9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		964C89081D13033F009E86A9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		964C890A1D13033F009E86A9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		964C890C1D13033F009E86A9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		964C890E1D13033F009E86A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		964C89101D13033F009E86A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964C891E1D130379009E86A9 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +105,7 @@
 		964C88D71D13033E009E86A9 = {
 			isa = PBXGroup;
 			children = (
+				964C891E1D130379009E86A9 /* MyPlayground.playground */,
 				964C88E21D13033E009E86A9 /* Sprites */,
 				964C88F61D13033F009E86A9 /* Sprites WatchKit App */,
 				964C89051D13033F009E86A9 /* Sprites WatchKit Extension */,
@@ -151,7 +151,6 @@
 			children = (
 				964C89081D13033F009E86A9 /* InterfaceController.swift */,
 				964C890A1D13033F009E86A9 /* ExtensionDelegate.swift */,
-				964C890C1D13033F009E86A9 /* NotificationController.swift */,
 				964C890E1D13033F009E86A9 /* Assets.xcassets */,
 				964C89101D13033F009E86A9 /* Info.plist */,
 				964C89061D13033F009E86A9 /* Supporting Files */,
@@ -230,13 +229,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Jason Ji";
 				TargetAttributes = {
 					964C88DF1D13033E009E86A9 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2GPQ8GE99T;
 						DevelopmentTeamName = "Jason Ji";
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					964C88F11D13033F009E86A9 = {
@@ -249,6 +249,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2GPQ8GE99T;
 						DevelopmentTeamName = "Jason Ji";
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -317,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				964C890D1D13033F009E86A9 /* NotificationController.swift in Sources */,
 				964C890B1D13033F009E86A9 /* ExtensionDelegate.swift in Sources */,
 				964C89091D13033F009E86A9 /* InterfaceController.swift in Sources */,
 			);
@@ -375,14 +375,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -422,14 +430,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -463,7 +479,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -479,7 +496,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -527,7 +545,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.Sprites;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -539,7 +558,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JYJApps.Sprites;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -562,6 +582,7 @@
 				964C89151D13033F009E86A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		964C89171D13033F009E86A9 /* Build configuration list for PBXNativeTarget "Sprites WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +591,7 @@
 				964C89191D13033F009E86A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		964C891B1D13033F009E86A9 /* Build configuration list for PBXNativeTarget "Sprites" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +600,7 @@
 				964C891D1D13033F009E86A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
